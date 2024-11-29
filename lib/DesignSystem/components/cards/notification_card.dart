@@ -45,7 +45,7 @@ class NotificationCard extends StatelessWidget {
                 Text(
                   notificationText,
                   style: TextStyle(
-                    color: Colors.black,
+                    color: AppColors.primaryBlack,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
@@ -56,7 +56,7 @@ class NotificationCard extends StatelessWidget {
                 Text(
                   notificationTime,
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: AppColors.textSecondary,
                     fontSize: 12,
                   ),
                 ),
@@ -65,7 +65,7 @@ class NotificationCard extends StatelessWidget {
           ),
           const Icon(
             CupertinoIcons.arrow_right,
-            color: Colors.blueAccent,
+            color: AppColors.secondary,
             size: 20,
           ),
         ],
