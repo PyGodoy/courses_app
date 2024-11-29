@@ -1,4 +1,4 @@
-import 'package:courses_app/DesignSystem/TextField/custom_text_field.dart';
+import 'package:courses_app/DesignSystem/InputTextField/input_text_field.dart';
 import 'package:courses_app/DesignSystem/colors/app_colors.dart';
 import 'package:courses_app/DesignSystem/components/buttons/elevated_button.dart';
 import 'package:courses_app/DesignSystem/typography/app_text_styles.dart';
