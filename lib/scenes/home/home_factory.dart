@@ -1,7 +1,7 @@
-import 'home_service.dart';
+import 'package:courses_app/scenes/home/home_screen.dart';
 
 class HomeFactory {
-  static HomeService createService() {
-    return HomeService();
+  static HomeScreen createScreen() {
+    return const HomeScreen();
   }
 }

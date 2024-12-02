@@ -1,11 +1,11 @@
-import 'package:courses_app/DesignSystem/alertDialog/alert_dialog.dart';
+import 'package:courses_app/DesignSystem/components/alertDialog/alert_dialog.dart';
 import 'package:courses_app/DesignSystem/components/cards/secondary_card_component.dart';
 import 'package:courses_app/scenes/home/home_router.dart';
 import 'package:flutter/material.dart';
-import 'package:courses_app/DesignSystem/colors/app_colors.dart';
+import 'package:courses_app/DesignSystem/shared/colors/app_colors.dart';
 import 'package:courses_app/DesignSystem/components/cards/CourseCardComponent.dart';
-import 'package:courses_app/DesignSystem/spacing/app_spacing.dart';
-import 'package:courses_app/DesignSystem/typography/app_text_styles.dart';
+import 'package:courses_app/DesignSystem/shared/spacing/app_spacing.dart';
+import 'package:courses_app/DesignSystem/shared/typography/app_text_styles.dart';
 import 'package:courses_app/DesignSystem/components/bottom_navigation/bottom_navigation_bar.dart';
 import 'package:courses_app/scenes/initialscreen/initial_screen.dart';
 

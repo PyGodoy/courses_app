@@ -1,7 +1,7 @@
-import 'package:courses_app/DesignSystem/alertDialog/alert_dialog.dart';
-import 'package:courses_app/DesignSystem/colors/app_colors.dart';
-import 'package:courses_app/DesignSystem/spacing/app_spacing.dart';
-import 'package:courses_app/DesignSystem/typography/app_text_styles.dart';
+import 'package:courses_app/DesignSystem/components/alertDialog/alert_dialog.dart';
+import 'package:courses_app/DesignSystem/shared/colors/app_colors.dart';
+import 'package:courses_app/DesignSystem/shared/spacing/app_spacing.dart';
+import 'package:courses_app/DesignSystem/shared/typography/app_text_styles.dart';
 import 'package:courses_app/scenes/home/home_router.dart'; // Importando o HomeRouter
 import 'package:courses_app/scenes/profile/profile_router.dart';
 import 'package:flutter/material.dart';

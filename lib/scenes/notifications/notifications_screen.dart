@@ -1,6 +1,6 @@
-import 'package:courses_app/DesignSystem/colors/app_colors.dart';
+import 'package:courses_app/DesignSystem/shared/colors/app_colors.dart';
 import 'package:courses_app/DesignSystem/components/cards/notification_card.dart';
-import 'package:courses_app/DesignSystem/typography/app_text_styles.dart';
+import 'package:courses_app/DesignSystem/shared/typography/app_text_styles.dart';
 import 'package:courses_app/scenes/home/home_router.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
