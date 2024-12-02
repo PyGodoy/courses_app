@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../colors/app_colors.dart';
-import '../../typography/app_text_styles.dart';
+import '../../shared/colors/app_colors.dart';
+import '../../shared/typography/app_text_styles.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String label;

@@ -1,10 +1,12 @@
-import 'package:courses_app/DesignSystem/InputTextField/input_text_field.dart';
-import 'package:courses_app/DesignSystem/colors/app_colors.dart';
+import 'package:courses_app/DesignSystem/components/InputTextField/input_text_field.dart';
+import 'package:courses_app/DesignSystem/shared/colors/app_colors.dart';
 import 'package:courses_app/DesignSystem/components/buttons/elevated_button.dart';
-import 'package:courses_app/DesignSystem/typography/app_text_styles.dart';
+import 'package:courses_app/DesignSystem/shared/typography/app_text_styles.dart';
 import 'package:courses_app/scenes/login/login_router.dart';
 import 'package:courses_app/scenes/login/login_service.dart';
-import 'package:flutter/material.dart';  // Importe o CustomTextField
+import 'package:courses_app/DesignSystem/components/LinkedLabel/linked_label.dart'; // Importar o LinkedLabel
+import 'package:courses_app/DesignSystem/components/LinkedLabel/linked_label_view_model.dart'; // Importar o ViewModel do LinkedLabel
+import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -44,11 +46,15 @@ class _LoginScreenState extends State<LoginScreen> {
         context,
         LoginRouter.generateRoute(const RouteSettings(name: '/home')),
       );
-      
     } else {
       // Mantém na tela de login e exibe o ícone de erro
       await Future.delayed(const Duration(seconds: 2)); // Simula feedback
     }
+  }
+
+  void _onForgotPasswordTap() {
+    // Ação ao clicar em "Esqueci minha senha"
+    print('Esqueci minha senha foi clicado!');
   }
 
   @override
@@ -100,6 +106,18 @@ class _LoginScreenState extends State<LoginScreen> {
                       hintText: 'Password',
                       icon: Icons.lock,
                       obscureText: true,
+                    ),
+                    const SizedBox(height: 8),
+                    // Adicionar o LinkedLabel
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: LinkedLabel.instantiate(
+                        viewModel: LinkedLabelViewModel(
+                          fullText: 'Esqueci minha senha',
+                          linkedText: 'Esqueci minha senha',
+                          onLinkTap: _onForgotPasswordTap,
+                        ),
+                      ),
                     ),
                     const SizedBox(height: 24),
                     // Exibição dinâmica de ícones (carregamento, sucesso ou erro)
@@ -163,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),

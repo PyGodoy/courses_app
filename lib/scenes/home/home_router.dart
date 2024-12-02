@@ -1,4 +1,7 @@
+import 'package:courses_app/scenes/home/home_factory.dart';
+import 'package:courses_app/scenes/notifications/notifications_factory.dart';
 import 'package:courses_app/scenes/notifications/notifications_screen.dart';
+import 'package:courses_app/scenes/profile/profile_factory.dart';
 import 'package:courses_app/scenes/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
@@ -8,19 +11,19 @@ class HomeRouter {
     switch (routeName) {
       case '/home':
         return MaterialPageRoute(
-          builder: (_) => const HomeScreen(),
+          builder: (_) => HomeFactory.createScreen(),
         );
       case '/notifications':
         return MaterialPageRoute(
-          builder: (_) => const NotificationsScreen(),
+          builder: (_) => NotificationsFactory.createScreen(),
         );
       case '/profile':
         return MaterialPageRoute(
-          builder: (_) => const ProfileScreen(),
+          builder: (_) => ProfileFactory.createScreen(),
         );
       default:
         return MaterialPageRoute(
-          builder: (_) => const HomeScreen(), // Fallback caso a rota não exista
+          builder: (_) => HomeFactory.createScreen(), // Fallback caso a rota não exista
         );
     }
   }

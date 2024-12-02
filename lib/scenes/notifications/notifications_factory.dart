@@ -1,7 +1,8 @@
-import 'notifications_service.dart';
+import 'package:courses_app/scenes/notifications/notifications_screen.dart';
 
 class NotificationsFactory {
-  static NotificationsService createService() {
-    return NotificationsService();
+  static NotificationsScreen createScreen() {
+    return const NotificationsScreen();
   }
 }
+
