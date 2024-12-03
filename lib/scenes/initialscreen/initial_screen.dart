@@ -28,14 +28,22 @@ class InitialScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // Novo título
+                Text(
+                  'Bem-vindo ao MobCourses',
+                  style: AppTextStyles.title1
+                ),
+                const SizedBox(height: 32),
+                // Título original
                 Text(
                   'Aprenda Flutter e Swift',
-                  style: AppTextStyles.title
+                  style: AppTextStyles.title,
                 ),
                 const SizedBox(height: 16),
+                // Descrição
                 Text(
                   'Aprenda a criar aplicativos reais com Flutter e Swift. Cursos completos sobre as melhores ferramentas.',
-                  style: AppTextStyles.bodyText1
+                  style: AppTextStyles.bodyText1,
                 ),
                 const SizedBox(height: 40),
                 CustomButton(
@@ -43,7 +51,9 @@ class InitialScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
-                      InitialRouter.generateRoute(const RouteSettings(name: '/initial/register')),
+                      InitialRouter.generateRoute(
+                        const RouteSettings(name: '/initial/register'),
+                      ),
                     );
                   },
                   color: AppColors.secondary,
@@ -52,7 +62,7 @@ class InitialScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 Text(
                   'A app inclui acesso a mais de 30 cursos, mais de 240 tutoriais, mais de 120 horas de vídeos, arquivos originais e certificados.',
-                  style: AppTextStyles.bodyText2
+                  style: AppTextStyles.bodyText2,
                 ),
               ],
             ),
