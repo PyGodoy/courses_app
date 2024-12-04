@@ -1,5 +1,5 @@
 import 'package:courses_app/scenes/initialscreen/initial_factory.dart';
-import 'package:courses_app/scenes/register/register_router.dart';
+import 'package:courses_app/scenes/login/login_factory.dart';
 import 'package:flutter/material.dart';
 
 class InitialRouter {
@@ -7,10 +7,8 @@ class InitialRouter {
     switch (settings.name) {
       case '/initial':
         return MaterialPageRoute(builder: (context) => InitialFactory.createScreen());
-      case '/initial/register':
-        return RegisterRouter.generateRoute(
-          const RouteSettings(name: '/register'),
-        );
+      case '/initial/login':
+        return MaterialPageRoute(builder: (context) => LoginFactory.createScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

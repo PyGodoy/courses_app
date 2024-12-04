@@ -2,6 +2,7 @@ import 'package:courses_app/DesignSystem/components/InputTextField/input_text_fi
 import 'package:courses_app/DesignSystem/shared/colors/app_colors.dart';
 import 'package:courses_app/DesignSystem/components/buttons/elevated_button.dart';
 import 'package:courses_app/DesignSystem/shared/typography/app_text_styles.dart';
+import 'package:courses_app/scenes/register/register_router.dart';
 import 'package:courses_app/scenes/register/register_serivce.dart';
 import 'package:flutter/material.dart';
 
@@ -73,6 +74,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
         ),
       );
     }
+  }
+  void _onLoginterTap() {
+    // Ação ao clicar no botão de registrar
+    Navigator.pushReplacement(
+      context,
+      RegisterRouter.generateRoute(const RouteSettings(name: '/login')),
+    );
   }
 
   @override
@@ -154,6 +162,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     CustomElevatedButton(
                       label: 'Cadastrar',
                       onPressed: _register, // Chama a função de registro
+                    ),
+                    const SizedBox(height: 32),
+                    // Texto e botão de registrar
+                    const Text(
+                      'Já possui uma conta?',
+                      style: AppTextStyles.bodyText2,
+                    ),
+                    const SizedBox(height: 8),
+                    CustomElevatedButton(
+                      label: 'Entrar',
+                      size: ButtonSize.small,
+                      onPressed: _onLoginterTap, // Ação ao clicar no botão registrar
                     ),
                   ],
                 ),

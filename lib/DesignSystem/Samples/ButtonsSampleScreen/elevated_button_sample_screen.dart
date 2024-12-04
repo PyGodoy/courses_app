@@ -1,6 +1,6 @@
 import 'package:courses_app/DesignSystem/components/buttons/elevated_button.dart';
 import 'package:flutter/material.dart';
-import '../../DesignSystem/shared/colors/app_colors.dart';
+import '../../shared/colors/app_colors.dart';
 
 class CustomElevatedButtonSampleScreen extends StatelessWidget {
   const CustomElevatedButtonSampleScreen({Key? key}) : super(key: key);
