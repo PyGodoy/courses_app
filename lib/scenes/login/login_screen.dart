@@ -57,6 +57,14 @@ class _LoginScreenState extends State<LoginScreen> {
     print('Esqueci minha senha foi clicado!');
   }
 
+  void _onRegisterTap() {
+    // Ação ao clicar no botão de registrar
+    Navigator.pushReplacement(
+      context,
+      LoginRouter.generateRoute(const RouteSettings(name: '/register')),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -181,6 +189,18 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                         ),
                       ],
+                    ),
+                    const SizedBox(height: 32),
+                    // Texto e botão de registrar
+                    const Text(
+                      'Não tem uma conta?',
+                      style: AppTextStyles.bodyText2,
+                    ),
+                    const SizedBox(height: 8),
+                    CustomElevatedButton(
+                      label: 'Registrar',
+                      size: ButtonSize.small,
+                      onPressed: _onRegisterTap, // Ação ao clicar no botão registrar
                     ),
                   ],
                 ),

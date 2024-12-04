@@ -1,10 +1,7 @@
 import 'package:courses_app/scenes/home/home_factory.dart';
 import 'package:courses_app/scenes/notifications/notifications_factory.dart';
-import 'package:courses_app/scenes/notifications/notifications_screen.dart';
 import 'package:courses_app/scenes/profile/profile_factory.dart';
-import 'package:courses_app/scenes/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
 
 class HomeRouter {
   static Route<dynamic> route(String routeName) {

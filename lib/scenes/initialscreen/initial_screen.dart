@@ -52,7 +52,7 @@ class InitialScreen extends StatelessWidget {
                     Navigator.pushReplacement(
                       context,
                       InitialRouter.generateRoute(
-                        const RouteSettings(name: '/initial/register'),
+                        const RouteSettings(name: '/initial/login'),
                       ),
                     );
                   },
@@ -72,3 +72,4 @@ class InitialScreen extends StatelessWidget {
     );
   }
 }
+//

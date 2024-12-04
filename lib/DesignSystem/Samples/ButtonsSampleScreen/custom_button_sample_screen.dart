@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../DesignSystem/components/buttons/custom_button.dart';
+import '../../components/buttons/custom_button.dart';
 
 class CustomButtonSampleScreen extends StatelessWidget {
   const CustomButtonSampleScreen({Key? key}) : super(key: key);

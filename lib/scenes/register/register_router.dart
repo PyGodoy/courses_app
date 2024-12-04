@@ -1,7 +1,5 @@
 import 'package:courses_app/scenes/login/login_factory.dart';
 import 'package:courses_app/scenes/register/register_factory.dart';
-import 'package:courses_app/scenes/register/register_screen.dart';
-import 'package:courses_app/scenes/login/login_screen.dart'; // Importe a tela de login
 import 'package:flutter/material.dart';
 
 class RegisterRouter {
